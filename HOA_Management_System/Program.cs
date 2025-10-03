@@ -3,7 +3,7 @@ using System.Collections.Generic;
 
 namespace HOA_Management_System
 {
-    // Household class with basic properties
+   
     class Household
     {
         public string HouseNumber { get; set; }
@@ -62,7 +62,7 @@ namespace HOA_Management_System
             } while (choice != 6);
         }
 
-        // Function to add a new household record
+ 
         static void AddHousehold()
         {
             Household newHousehold = new Household();
@@ -83,7 +83,7 @@ namespace HOA_Management_System
             Console.WriteLine("Household added successfully!");
         }
 
-        // Function to display all households
+ 
         static void ViewAllHouseholds()
         {
             if (households.Count == 0)
@@ -99,7 +99,7 @@ namespace HOA_Management_System
             }
         }
 
-        // Function to search for a household by its house number
+       
         static void SearchHouseholdByNumber()
         {
             Console.Write("Enter House Number to search: ");
@@ -118,7 +118,7 @@ namespace HOA_Management_System
             }
         }
 
-        // Function to count total households
+
         static void DisplayTotalHouseholds()
         {
             Console.WriteLine($"Total number of households: {households.Count}");
